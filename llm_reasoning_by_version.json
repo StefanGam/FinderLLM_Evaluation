@@ -1,0 +1,937 @@
+{
+  "Version_1": {
+    "images": [
+      "core_chart_^GSPC_2024-12-13.png"
+    ],
+    "call_mode": "json_schema",
+    "questions": [
+      {
+        "id": 1,
+        "panel": "Price & Trend",
+        "question": "Over the final month visible, is the Close price in an uptrend, a downtrend, or moving sideways?",
+        "allowed_answers": [
+          "Uptrend",
+          "Downtrend",
+          "Sideways"
+        ]
+      },
+      {
+        "id": 2,
+        "panel": "Price & Trend",
+        "question": "Does the Close price touch or fall below the BB Lower line at any point during the last two months visible?",
+        "allowed_answers": [
+          "Yes",
+          "No"
+        ]
+      },
+      {
+        "id": 3,
+        "panel": "Price & Trend",
+        "question": "In the period when BB Width (right axis) reaches its maximum, is the Close price generally rising or falling?",
+        "allowed_answers": [
+          "Rising",
+          "Falling",
+          "Flat"
+        ]
+      },
+      {
+        "id": 4,
+        "panel": "Volatility & ATR",
+        "question": "In which month does ATR reach its highest value?",
+        "allowed_answers": [
+          "2024-07",
+          "2024-08",
+          "2024-09",
+          "2024-10",
+          "2024-11",
+          "2024-12"
+        ]
+      },
+      {
+        "id": 5,
+        "panel": "Volatility & ATR + Price",
+        "question": "Around the time ATR reaches its maximum, is the Close price rising, falling, or flat?",
+        "allowed_answers": [
+          "Rising",
+          "Falling",
+          "Flat"
+        ]
+      },
+      {
+        "id": 6,
+        "panel": "MACD & RSI",
+        "question": "At the last visible data point, is RSI above the overbought line (70), below the oversold line (30), or between them?",
+        "allowed_answers": [
+          "Above 70",
+          "Below 30",
+          "Between"
+        ]
+      },
+      {
+        "id": 7,
+        "panel": "MACD & RSI",
+        "question": "At the last visible data point, is the MACD histogram positive or negative?",
+        "allowed_answers": [
+          "Positive",
+          "Negative"
+        ]
+      },
+      {
+        "id": 8,
+        "panel": "MACD & RSI",
+        "question": "Considering RSI and the MACD histogram together at the end of the chart, do they give the same directional signal?",
+        "allowed_answers": [
+          "Both bullish",
+          "Both bearish",
+          "Mixed"
+        ]
+      },
+      {
+        "id": 9,
+        "panel": "Drawdown Risk",
+        "question": "In which month does the Ulcer Index reach its maximum?",
+        "allowed_answers": [
+          "2024-07",
+          "2024-08",
+          "2024-09",
+          "2024-10",
+          "2024-11",
+          "2024-12"
+        ]
+      },
+      {
+        "id": 10,
+        "panel": "Drawdown Risk + VaR/ES",
+        "question": "Are the VaR and ES lines at their most negative during the same period in which the Ulcer Index peaks?",
+        "allowed_answers": [
+          "Yes",
+          "No"
+        ]
+      },
+      {
+        "id": 11,
+        "panel": "OBV + Price",
+        "question": "Over the final month visible, does OBV move in the same direction as the Close price (confirmation) or in the opposite direction (divergence)?",
+        "allowed_answers": [
+          "Confirmation",
+          "Divergence"
+        ]
+      },
+      {
+        "id": 12,
+        "panel": "Synthesis",
+        "question": "Combining the momentum panel (MACD/RSI) and the risk panels (Ulcer Index, VaR/ES) at the last visible data point, is the overall picture risk-on (calm/bullish), risk-off (stressed/bearish), or mixed?",
+        "allowed_answers": [
+          "Risk-on",
+          "Risk-off",
+          "Mixed"
+        ]
+      }
+    ],
+    "answers": {
+      "answers": [
+        {
+          "id": 1,
+          "model_answer": "Uptrend",
+          "reasoning": "The red dotted Close line in the top panel rises toward the rightmost edge over the final month. The series shows higher values at the last visible points compared to the start of that month.",
+          "evidence_images": [
+            1
+          ]
+        },
+        {
+          "id": 2,
+          "model_answer": "No",
+          "reasoning": "In the top panel the purple BB Lower line remains below the red Close line during the last two months. The Close does not visually touch or drop beneath the purple lower band at the right side of the chart.",
+          "evidence_images": [
+            1
+          ]
+        },
+        {
+          "id": 3,
+          "model_answer": "Falling",
+          "reasoning": "The BB Width (magenta/purple, right axis) reaches its peak near the mid-left of the chart where the red Close line is trending downward. The Close is lower across that peak period, indicating a falling price when BB Width is maximized.",
+          "evidence_images": [
+            1
+          ]
+        },
+        {
+          "id": 4,
+          "model_answer": "2024-08",
+          "reasoning": "The ATR (purple line in the Volatility & ATR panel) reaches its highest point around the second month from the left, which corresponds to 2024-08 on the x-axis. That peak is visually the tallest in that panel.",
+          "evidence_images": [
+            1
+          ]
+        },
+        {
+          "id": 5,
+          "model_answer": "Falling",
+          "reasoning": "Around the ATR peak in the Volatility panel the red Close line in the top panel is moving downward. The Close shows a decline during the period when ATR is at its maximum.",
+          "evidence_images": [
+            1
+          ]
+        },
+        {
+          "id": 6,
+          "model_answer": "Between",
+          "reasoning": "In the MACD & RSI panel the RSI line at the rightmost point sits between the 30 and 70 horizontal guides and is not near the upper 70 or lower 30 extremes. Visually it is in the mid-range.",
+          "evidence_images": [
+            1
+          ]
+        },
+        {
+          "id": 7,
+          "model_answer": "Negative",
+          "reasoning": "The MACD histogram bars at the last visible data point are red and extend below the zero line in the MACD panel. This indicates a negative histogram value at the end.",
+          "evidence_images": [
+            1
+          ]
+        },
+        {
+          "id": 8,
+          "model_answer": "Mixed",
+          "reasoning": "At the end the MACD histogram is negative (bearish) while the RSI is in the neutral mid-range (neither overbought nor oversold). The two indicators therefore give mixed directional signals.",
+          "evidence_images": [
+            1
+          ]
+        },
+        {
+          "id": 9,
+          "model_answer": "2024-08",
+          "reasoning": "The Ulcer Index (red dashed line in the Drawdown Risk panel) reaches its highest peak around the second month from the left, matching the 2024-08 position on the x-axis. That peak is the maximum visible in that panel.",
+          "evidence_images": [
+            1
+          ]
+        },
+        {
+          "id": 10,
+          "model_answer": "Yes",
+          "reasoning": "The VaR and ES lines in the VaR/ES panel reach their most negative levels around the same early period (second month) as the Ulcer Index peak. Visually their lowest trough coincides with the Ulcer Index maximum.",
+          "evidence_images": [
+            1
+          ]
+        },
+        {
+          "id": 11,
+          "model_answer": "Confirmation",
+          "reasoning": "In the final month both the blue OBV line in the bottom panel and the red Close line in the top panel trend upward toward the rightmost edge. The OBV movement therefore confirms the price rise.",
+          "evidence_images": [
+            1
+          ]
+        },
+        {
+          "id": 12,
+          "model_answer": "Mixed",
+          "reasoning": "At the end momentum is mixed/weak (negative MACD histogram and neutral RSI) while risk measures (Ulcer Index and VaR/ES) are relatively low/calm. These conflicting signals produce a mixed overall picture.",
+          "evidence_images": [
+            1
+          ]
+        }
+      ]
+    }
+  },
+  "Version_2": {
+    "images": [
+      "enhanced_chart_^GSPC_2020-06-29.png"
+    ],
+    "call_mode": "json_schema",
+    "questions": [
+      {
+        "id": 1,
+        "panel": "Price & Trend",
+        "question": "At the last visible data point, is the Close price above or below SMA200?",
+        "allowed_answers": [
+          "Above",
+          "Below"
+        ]
+      },
+      {
+        "id": 2,
+        "panel": "Price & Trend",
+        "question": "In which month does the sharpest price decline occur?",
+        "allowed_answers": [
+          "2020-01",
+          "2020-02",
+          "2020-03",
+          "2020-04",
+          "2020-05",
+          "2020-06"
+        ]
+      },
+      {
+        "id": 3,
+        "panel": "Oscillators + Price",
+        "question": "During the sharpest price decline, does RSI fall below the oversold line (30)?",
+        "allowed_answers": [
+          "Yes",
+          "No"
+        ]
+      },
+      {
+        "id": 4,
+        "panel": "Volatility",
+        "question": "At the last visible data point, is HV_30 near its maximum for the window, near its minimum, or somewhere in the middle?",
+        "allowed_answers": [
+          "Near maximum",
+          "Near minimum",
+          "Middle"
+        ]
+      },
+      {
+        "id": 5,
+        "panel": "Oscillators",
+        "question": "At the last visible data point, is the MACD histogram positive or negative?",
+        "allowed_answers": [
+          "Positive",
+          "Negative"
+        ]
+      },
+      {
+        "id": 6,
+        "panel": "Stoch / WilliamsR / Z-Score",
+        "question": "At the last visible data point, are Stoch %K and Stoch %D both above 80?",
+        "allowed_answers": [
+          "Yes",
+          "No"
+        ]
+      },
+      {
+        "id": 7,
+        "panel": "ATR / CMF",
+        "question": "At the last visible data point, is CMF above or below zero?",
+        "allowed_answers": [
+          "Above",
+          "Below"
+        ]
+      },
+      {
+        "id": 8,
+        "panel": "OBV / ADX",
+        "question": "Over the final two months visible, is OBV rising or falling?",
+        "allowed_answers": [
+          "Rising",
+          "Falling"
+        ]
+      },
+      {
+        "id": 9,
+        "panel": "OBV + Price",
+        "question": "Does the OBV direction over the final two months confirm the Close price direction over the same period?",
+        "allowed_answers": [
+          "Confirms",
+          "Diverges"
+        ]
+      },
+      {
+        "id": 10,
+        "panel": "Skewness & Kurtosis",
+        "question": "At the last visible data point, is the 20-day skewness positive or negative?",
+        "allowed_answers": [
+          "Positive",
+          "Negative"
+        ]
+      },
+      {
+        "id": 11,
+        "panel": "VaR & ES + Price",
+        "question": "At the last visible data point, are the VaR/ES lines wider (more negative) or narrower (closer to zero) than during the sharpest-decline period?",
+        "allowed_answers": [
+          "Wider",
+          "Narrower",
+          "About the same"
+        ]
+      },
+      {
+        "id": 12,
+        "panel": "Synthesis",
+        "question": "Considering price versus its moving averages, volatility, and the risk panels at the end of the chart, does the market look like it is recovering from the earlier decline or still under stress?",
+        "allowed_answers": [
+          "Recovering",
+          "Still under stress",
+          "Mixed"
+        ]
+      }
+    ],
+    "answers": {
+      "answers": [
+        {
+          "id": 1,
+          "model_answer": "Below",
+          "reasoning": "At the rightmost point the black Close line sits slightly under the long-period dotted moving average (SMA200) visible above the price. The SMA200 line remains above the current price level at the end of the chart.",
+          "evidence_images": [
+            1
+          ]
+        },
+        {
+          "id": 2,
+          "model_answer": "2020-03",
+          "reasoning": "The largest, steepest drop in the black Close price occurs in March 2020 where the price plunges sharply to its low. No other month shows a comparable single-month decline on the plot.",
+          "evidence_images": [
+            1
+          ]
+        },
+        {
+          "id": 3,
+          "model_answer": "Yes",
+          "reasoning": "During the sharp March decline the RSI line in the oscillator panel plunges well below the lower dashed oversold line (30). The oscillator clearly dips into the oversold region during that period.",
+          "evidence_images": [
+            1
+          ]
+        },
+        {
+          "id": 4,
+          "model_answer": "Near minimum",
+          "reasoning": "The HV_30 series (green) spikes in March and then steadily declines; at the end of the chart it is near the lower range of the window. The end value is much closer to the low than to the earlier peak.",
+          "evidence_images": [
+            1
+          ]
+        },
+        {
+          "id": 5,
+          "model_answer": "Negative",
+          "reasoning": "The MACD histogram bars at the rightmost region are small red bars below the zero line, indicating negative values. The histogram is below zero at the last visible point.",
+          "evidence_images": [
+            1
+          ]
+        },
+        {
+          "id": 6,
+          "model_answer": "No",
+          "reasoning": "In the Stoch panel the %K and %D lines at the end are below the 80 overbought threshold and sit around mid-range, not above 80. Both lines are visibly under the upper dashed line at the rightmost point.",
+          "evidence_images": [
+            1
+          ]
+        },
+        {
+          "id": 7,
+          "model_answer": "Below",
+          "reasoning": "The CMF trace in the ATR/CMF panel is below the zero line at the right edge of the chart. The end-point of the CMF indicator is clearly on the negative side.",
+          "evidence_images": [
+            1
+          ]
+        },
+        {
+          "id": 8,
+          "model_answer": "Rising",
+          "reasoning": "The OBV line over the final two months shows an upward slope toward the end of the chart. The OBV trend is increasing in the last visible period.",
+          "evidence_images": [
+            1
+          ]
+        },
+        {
+          "id": 9,
+          "model_answer": "Confirms",
+          "reasoning": "Both the Close price and OBV trend upward over the final two months; the price shows a modest rise and OBV rises alongside it. The matching direction indicates confirmation.",
+          "evidence_images": [
+            1
+          ]
+        },
+        {
+          "id": 10,
+          "model_answer": "Negative",
+          "reasoning": "The 20-day skewness line in the Skewness & Kurtosis panel is slightly below the zero line at the rightmost point, indicating negative skew. The end value is on the negative side of the axis.",
+          "evidence_images": [
+            1
+          ]
+        },
+        {
+          "id": 11,
+          "model_answer": "Narrower",
+          "reasoning": "The VaR/ES bands during the March decline are much wider (more negative) than at the end; the end-period VaR/ES lines are closer to zero. The current bands are visibly narrower than the spike during the sharp decline.",
+          "evidence_images": [
+            1
+          ]
+        },
+        {
+          "id": 12,
+          "model_answer": "Recovering",
+          "reasoning": "Price has rebounded toward its moving averages, volatility (HV_30) has fallen from its peak, and VaR/ES bands are narrower at the end, all indicating improvement. These visual signals point to a market that is recovering from the earlier decline.",
+          "evidence_images": [
+            1
+          ]
+        }
+      ]
+    }
+  },
+  "Version_3": {
+    "images": [
+      "GSPC_2025-05-08_chart1.png",
+      "GSPC_2025-05-08_chart2.png",
+      "GSPC_2025-05-08_chart3.png"
+    ],
+    "call_mode": "json_schema",
+    "questions": [
+      {
+        "id": 1,
+        "panel": "Image 1 - Price & Trend",
+        "question": "At the last visible data point, is the Close price above or below SMA200?",
+        "allowed_answers": [
+          "Above",
+          "Below"
+        ]
+      },
+      {
+        "id": 2,
+        "panel": "Image 1 - Price & Trend",
+        "question": "The price panel marks a Death Cross event. In which month does it occur?",
+        "allowed_answers": [
+          "2024-11",
+          "2024-12",
+          "2025-01",
+          "2025-02",
+          "2025-03",
+          "2025-04",
+          "2025-05"
+        ]
+      },
+      {
+        "id": 3,
+        "panel": "Image 1 - Price & Trend",
+        "question": "In which month does the sharpest price decline occur?",
+        "allowed_answers": [
+          "2024-11",
+          "2024-12",
+          "2025-01",
+          "2025-02",
+          "2025-03",
+          "2025-04",
+          "2025-05"
+        ]
+      },
+      {
+        "id": 4,
+        "panel": "Cross-image: Image 1 + Image 2",
+        "question": "During the sharpest price decline (visible in Image 1), is ATR (Image 2) rising or falling?",
+        "allowed_answers": [
+          "Rising",
+          "Falling"
+        ]
+      },
+      {
+        "id": 5,
+        "panel": "Image 1 - Oscillators",
+        "question": "At the last visible data point, is RSI above the overbought line (70), below the oversold line (30), or between them?",
+        "allowed_answers": [
+          "Above 70",
+          "Below 30",
+          "Between"
+        ]
+      },
+      {
+        "id": 6,
+        "panel": "Image 1 - Oscillators",
+        "question": "At the last visible data point, is the MACD histogram positive or negative?",
+        "allowed_answers": [
+          "Positive",
+          "Negative"
+        ]
+      },
+      {
+        "id": 7,
+        "panel": "Image 2 - Stochastic",
+        "question": "At the last visible data point, are Stoch %K and Stoch %D both above 80?",
+        "allowed_answers": [
+          "Yes",
+          "No"
+        ]
+      },
+      {
+        "id": 8,
+        "panel": "Image 2 - CMF",
+        "question": "At the last visible data point, is CMF above or below zero?",
+        "allowed_answers": [
+          "Above",
+          "Below"
+        ]
+      },
+      {
+        "id": 9,
+        "panel": "Image 3 - ADX",
+        "question": "At the last visible data point, is ADX above or below the strong-trend threshold (25)?",
+        "allowed_answers": [
+          "Above",
+          "Below"
+        ]
+      },
+      {
+        "id": 10,
+        "panel": "Cross-image: Image 3 + Image 1",
+        "question": "Over the final month visible, does OBV (Image 3) confirm the Close price direction (Image 1) or diverge from it?",
+        "allowed_answers": [
+          "Confirms",
+          "Diverges"
+        ]
+      },
+      {
+        "id": 11,
+        "panel": "Cross-image: Image 3 + Image 1",
+        "question": "Do the VaR/ES lines (Image 3) reach their most negative values during the same period as the sharpest price decline (Image 1)?",
+        "allowed_answers": [
+          "Yes",
+          "No"
+        ]
+      },
+      {
+        "id": 12,
+        "panel": "Synthesis - all images",
+        "question": "Combining trend and momentum (Image 1), volatility and money flow (Image 2), and the risk measures (Image 3) at the last visible data point, is the overall picture risk-on, risk-off, or mixed?",
+        "allowed_answers": [
+          "Risk-on",
+          "Risk-off",
+          "Mixed"
+        ]
+      }
+    ],
+    "answers": {
+      "answers": [
+        {
+          "id": 1,
+          "model_answer": "Below",
+          "reasoning": "The black Close line at the rightmost point is visually under the orange SMA200 dashed line in the price panel. The Close is lower than the SMA200 curve on Image 1.",
+          "evidence_images": [
+            1
+          ]
+        },
+        {
+          "id": 2,
+          "model_answer": "2025-04",
+          "reasoning": "The red Death Cross marker on the price panel appears just after the large March\u2013April drop, positioned in early April 2025. This places the event in April 2025 on Image 1.",
+          "evidence_images": [
+            1
+          ]
+        },
+        {
+          "id": 3,
+          "model_answer": "2025-04",
+          "reasoning": "The steepest drop in the black price line occurs around the early-April region, where the curve falls sharply to its low. That sharp decline is clearly in April 2025 on Image 1.",
+          "evidence_images": [
+            1
+          ]
+        },
+        {
+          "id": 4,
+          "model_answer": "Rising",
+          "reasoning": "In Image 2 the ATR red line spikes upward during the early-April period that corresponds to the sharp price decline in Image 1. ATR clearly rises at that time.",
+          "evidence_images": [
+            1,
+            2
+          ]
+        },
+        {
+          "id": 5,
+          "model_answer": "Between",
+          "reasoning": "The purple RSI line in the oscillators panel on Image 1 at the rightmost point sits below the 70 overbought horizontal line and well above the 30 line. Thus RSI is between 30 and 70.",
+          "evidence_images": [
+            1
+          ]
+        },
+        {
+          "id": 6,
+          "model_answer": "Positive",
+          "reasoning": "The MACD histogram bars at the last visible point in Image 1 are green and extend above the zero line, indicating a positive histogram. The bars are positive at the rightmost data point.",
+          "evidence_images": [
+            1
+          ]
+        },
+        {
+          "id": 7,
+          "model_answer": "Yes",
+          "reasoning": "In Image 2 both Stoch %K (blue) and %D (green) are plotted at the top of the panel near the 100 level at the rightmost date, clearly above the 80 line. Both lines are above 80 at the last point.",
+          "evidence_images": [
+            2
+          ]
+        },
+        {
+          "id": 8,
+          "model_answer": "Above",
+          "reasoning": "The CMF blue line in Image 2 is positive at the rightmost date, sitting above the zero horizontal line. This indicates CMF is above zero at the last point.",
+          "evidence_images": [
+            2
+          ]
+        },
+        {
+          "id": 9,
+          "model_answer": "Below",
+          "reasoning": "The red ADX line in Image 3 slopes down toward the end and sits just under the dotted strong-trend (25) level at the rightmost point. ADX is below the 25 threshold.",
+          "evidence_images": [
+            3
+          ]
+        },
+        {
+          "id": 10,
+          "model_answer": "Confirms",
+          "reasoning": "Over the final month the Close in Image 1 shows an upward move and the OBV in Image 3 also trends upward at the same time, indicating OBV confirms the price direction. Both series rise together at the end.",
+          "evidence_images": [
+            1,
+            3
+          ]
+        },
+        {
+          "id": 11,
+          "model_answer": "Yes",
+          "reasoning": "The VaR/ES lines in the bottom panel of Image 3 reach their deepest negative values around early April, which coincides with the sharpest price decline visible in Image 1. The timing of the most negative VaR/ES matches the decline.",
+          "evidence_images": [
+            1,
+            3
+          ]
+        },
+        {
+          "id": 12,
+          "model_answer": "Mixed",
+          "reasoning": "Price is below the long-term SMA and a Death Cross occurred (bearish), but momentum (MACD hist positive, RSI between) and CMF are supportive and VaR/ES have eased; ADX is below strong-trend. These conflicting signals produce a mixed overall picture.",
+          "evidence_images": [
+            1,
+            2,
+            3
+          ]
+        }
+      ]
+    }
+  },
+  "Version_4": {
+    "images": [
+      "^GSPC_2025-03-05_chart1.png",
+      "^GSPC_2025-03-05_chart2.png",
+      "^GSPC_2025-03-05_chart3.png",
+      "^GSPC_2025-03-05_chart4.png",
+      "^GSPC_2025-03-05_chart5.png",
+      "^GSPC_2025-03-05_chart6.png"
+    ],
+    "call_mode": "json_schema",
+    "questions": [
+      {
+        "id": 1,
+        "panel": "Image 1 - Price & Trend",
+        "question": "At the last visible data point, is the Close price above or below SMA200?",
+        "allowed_answers": [
+          "Above",
+          "Below"
+        ]
+      },
+      {
+        "id": 2,
+        "panel": "Image 1 - Price & Trend",
+        "question": "Over the final month visible, is the Close price in an uptrend, a downtrend, or moving sideways?",
+        "allowed_answers": [
+          "Uptrend",
+          "Downtrend",
+          "Sideways"
+        ]
+      },
+      {
+        "id": 3,
+        "panel": "Image 1 - Volatility",
+        "question": "At the last visible data point, which line is higher: VOL_GK or Vol_1pct?",
+        "allowed_answers": [
+          "VOL_GK",
+          "Vol_1pct"
+        ]
+      },
+      {
+        "id": 4,
+        "panel": "Image 2 - Oscillators",
+        "question": "At the last visible data point, is RSI above the overbought line (70), below the oversold line (30), or between them?",
+        "allowed_answers": [
+          "Above 70",
+          "Below 30",
+          "Between"
+        ]
+      },
+      {
+        "id": 5,
+        "panel": "Image 2 - Oscillators",
+        "question": "At the last visible data point, is the MACD histogram positive or negative?",
+        "allowed_answers": [
+          "Positive",
+          "Negative"
+        ]
+      },
+      {
+        "id": 6,
+        "panel": "Image 2 - Oscillators",
+        "question": "Considering RSI and the MACD histogram together at the end of the chart, do they give the same directional signal?",
+        "allowed_answers": [
+          "Both bullish",
+          "Both bearish",
+          "Mixed"
+        ]
+      },
+      {
+        "id": 7,
+        "panel": "Image 3 - ATR",
+        "question": "Over the final month visible, is ATR rising or falling?",
+        "allowed_answers": [
+          "Rising",
+          "Falling"
+        ]
+      },
+      {
+        "id": 8,
+        "panel": "Image 3 - Williams %R",
+        "question": "At the last visible data point, is Williams %R near 0 (top of its range), near -100 (bottom of its range), or in the middle?",
+        "allowed_answers": [
+          "Near 0",
+          "Near -100",
+          "Middle"
+        ]
+      },
+      {
+        "id": 9,
+        "panel": "Image 4 - Ulcer Index",
+        "question": "Over the final month visible, is the Ulcer Index rising or falling, and is its final value near the maximum of the window?",
+        "allowed_answers": [
+          "Rising, near maximum",
+          "Rising, not near maximum",
+          "Falling, near maximum",
+          "Falling, not near maximum"
+        ]
+      },
+      {
+        "id": 10,
+        "panel": "Cross-image: Image 4 + Image 1",
+        "question": "Over the final month visible, does OBV (Image 4) confirm the Close price direction (Image 1) or diverge from it?",
+        "allowed_answers": [
+          "Confirms",
+          "Diverges"
+        ]
+      },
+      {
+        "id": 11,
+        "panel": "Image 5 - Skewness",
+        "question": "At the last visible data point, is the 60-day skewness positive or negative?",
+        "allowed_answers": [
+          "Positive",
+          "Negative"
+        ]
+      },
+      {
+        "id": 12,
+        "panel": "Image 6 - VaR & ES",
+        "question": "At the last visible data point, is the 5% ES line below (more negative than) the 5% VaR line?",
+        "allowed_answers": [
+          "Yes",
+          "No"
+        ]
+      },
+      {
+        "id": 13,
+        "panel": "Synthesis - all images",
+        "question": "Combining all six images at the last visible data point, is overall market risk rising, falling, or mixed? In your reasoning, name the two images that most support your answer.",
+        "allowed_answers": [
+          "Rising",
+          "Falling",
+          "Mixed"
+        ]
+      }
+    ],
+    "answers": {
+      "answers": [
+        {
+          "id": 1,
+          "model_answer": "Above",
+          "reasoning": "The black Close line at the rightmost edge is visibly above the orange dashed SMA200 line in the top panel. The gap between the Close and SMA200 is positive at the last plotted point.",
+          "evidence_images": [
+            1
+          ]
+        },
+        {
+          "id": 2,
+          "model_answer": "Downtrend",
+          "reasoning": "Over the final month the black Close line in Image 1 slopes downward from a mid/late-Feb peak to a lower level at the rightmost edge, with only a small bounce at the end. The general direction is clearly downward.",
+          "evidence_images": [
+            1
+          ]
+        },
+        {
+          "id": 3,
+          "model_answer": "Vol_1pct",
+          "reasoning": "In the volatility panel of Image 1 the red dotted Vol_1pct line is above the cyan VOL_GK line at the final data point. The red dotted series is clearly higher on the right edge.",
+          "evidence_images": [
+            1
+          ]
+        },
+        {
+          "id": 4,
+          "model_answer": "Between",
+          "reasoning": "The purple RSI line in Image 2 at the rightmost point is above the 30 oversold line but well below the 70 overbought line. It sits between the two dashed thresholds.",
+          "evidence_images": [
+            2
+          ]
+        },
+        {
+          "id": 5,
+          "model_answer": "Negative",
+          "reasoning": "The MACD histogram bars in Image 2 at the rightmost side are red and extend below the zero line. This indicates a negative histogram at the last point.",
+          "evidence_images": [
+            2
+          ]
+        },
+        {
+          "id": 6,
+          "model_answer": "Mixed",
+          "reasoning": "RSI is in the neutral band (between 30 and 70) while the MACD histogram is negative at the end, giving conflicting signals. One indicator is neutral and the other is bearish.",
+          "evidence_images": [
+            2
+          ]
+        },
+        {
+          "id": 7,
+          "model_answer": "Rising",
+          "reasoning": "The ATR red line in Image 3 climbs noticeably in the final month and reaches a high at the rightmost point. The slope over the last visible month is upward.",
+          "evidence_images": [
+            3
+          ]
+        },
+        {
+          "id": 8,
+          "model_answer": "Middle",
+          "reasoning": "Williams %R (purple) in Image 3 at the right edge sits well above -100 and well below 0, around the mid-range of the scale. It is not near the top (0) or bottom (-100).",
+          "evidence_images": [
+            3
+          ]
+        },
+        {
+          "id": 9,
+          "model_answer": "Rising, near maximum",
+          "reasoning": "The Ulcer Index in Image 4 rises sharply in the final month and reaches the highest values of the plotted window at the rightmost point. The final value is close to the window maximum.",
+          "evidence_images": [
+            4
+          ]
+        },
+        {
+          "id": 10,
+          "model_answer": "Confirms",
+          "reasoning": "Close price in Image 1 shows a downtrend over the final month and OBV in Image 4 also trends downward in the same period. Both price and OBV move lower, so OBV confirms the price direction.",
+          "evidence_images": [
+            1,
+            4
+          ]
+        },
+        {
+          "id": 11,
+          "model_answer": "Negative",
+          "reasoning": "The cyan 60-day skewness line in Image 5 is below the zero dashed line at the rightmost point, indicating a negative skewness value. The final marker is clearly on the negative side.",
+          "evidence_images": [
+            5
+          ]
+        },
+        {
+          "id": 12,
+          "model_answer": "Yes",
+          "reasoning": "In Image 6 the orange 5% ES line at the rightmost edge is slightly below (more negative than) the red 5% VaR line. The ES line sits lower on the vertical axis at the last point.",
+          "evidence_images": [
+            6
+          ]
+        },
+        {
+          "id": 13,
+          "model_answer": "Rising",
+          "reasoning": "Multiple risk metrics rise at the end: ATR in Image 3 increases sharply and the Ulcer Index in Image 4 climbs to near its window maximum, both indicating rising market risk. These two images most clearly support a rising risk conclusion.",
+          "evidence_images": [
+            3,
+            4
+          ]
+        }
+      ]
+    }
+  }
+}
