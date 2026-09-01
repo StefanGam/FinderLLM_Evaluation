@@ -1,0 +1,1236 @@
+{
+  "Version_1": [
+    {
+      "image": "core_chart_^GSPC_2024-12-13.png",
+      "output": {
+        "num_plots": 7,
+        "plots": [
+          {
+            "plot_id": 1,
+            "num_series": 3,
+            "dual_y_axis": true,
+            "series": [
+              {
+                "color": "#000000",
+                "label": "Close",
+                "y_axis_side": "left"
+              },
+              {
+                "color": "#e41a1c",
+                "label": "BB Lower",
+                "y_axis_side": "left"
+              },
+              {
+                "color": "#9467bd",
+                "label": "BB Width",
+                "y_axis_side": "right"
+              }
+            ],
+            "x_axis": {
+              "label": "Date",
+              "values": []
+            },
+            "y_axis_left": {
+              "label": "Close",
+              "min": 0.0,
+              "max": 200.0
+            },
+            "y_axis_right": {
+              "label": "BB Width",
+              "min": 0.0,
+              "max": 1.0
+            }
+          },
+          {
+            "plot_id": 2,
+            "num_series": 4,
+            "dual_y_axis": false,
+            "series": [
+              {
+                "color": "#e41a1c",
+                "label": "VOLATILITY",
+                "y_axis_side": "left"
+              },
+              {
+                "color": "#4daf4a",
+                "label": "HV_10",
+                "y_axis_side": "left"
+              },
+              {
+                "color": "#ff7f0e",
+                "label": "HV_30",
+                "y_axis_side": "left"
+              },
+              {
+                "color": "#9467bd",
+                "label": "ATR",
+                "y_axis_side": "left"
+              }
+            ],
+            "x_axis": {
+              "label": "Date",
+              "values": []
+            },
+            "y_axis_left": {
+              "label": "Volatility / HV / ATR",
+              "min": 0.0,
+              "max": 5.0
+            },
+            "y_axis_right": {
+              "label": null,
+              "min": null,
+              "max": null
+            }
+          },
+          {
+            "plot_id": 3,
+            "num_series": 2,
+            "dual_y_axis": false,
+            "series": [
+              {
+                "color": "#1f77b4",
+                "label": "MACD",
+                "y_axis_side": "left"
+              },
+              {
+                "color": "#2ca02c",
+                "label": "MACD Hist",
+                "y_axis_side": "left"
+              }
+            ],
+            "x_axis": {
+              "label": "Date",
+              "values": []
+            },
+            "y_axis_left": {
+              "label": "MACD",
+              "min": -5.0,
+              "max": 5.0
+            },
+            "y_axis_right": {
+              "label": null,
+              "min": null,
+              "max": null
+            }
+          },
+          {
+            "plot_id": 4,
+            "num_series": 1,
+            "dual_y_axis": false,
+            "series": [
+              {
+                "color": "#1f77b4",
+                "label": "OBV",
+                "y_axis_side": "left"
+              }
+            ],
+            "x_axis": {
+              "label": "Date",
+              "values": []
+            },
+            "y_axis_left": {
+              "label": "OBV",
+              "min": -1000000.0,
+              "max": 1000000.0
+            },
+            "y_axis_right": {
+              "label": null,
+              "min": null,
+              "max": null
+            }
+          },
+          {
+            "plot_id": 5,
+            "num_series": 2,
+            "dual_y_axis": false,
+            "series": [
+              {
+                "color": "#000000",
+                "label": "MaxDD 20d",
+                "y_axis_side": "left"
+              },
+              {
+                "color": "#e41a1c",
+                "label": "Ulcer Index",
+                "y_axis_side": "left"
+              }
+            ],
+            "x_axis": {
+              "label": "Date",
+              "values": []
+            },
+            "y_axis_left": {
+              "label": "Drawdown / Ulcer Index",
+              "min": -20.0,
+              "max": 20.0
+            },
+            "y_axis_right": {
+              "label": null,
+              "min": null,
+              "max": null
+            }
+          },
+          {
+            "plot_id": 6,
+            "num_series": 1,
+            "dual_y_axis": false,
+            "series": [
+              {
+                "color": "#9467bd",
+                "label": "RSI",
+                "y_axis_side": "left"
+              }
+            ],
+            "x_axis": {
+              "label": "Date",
+              "values": []
+            },
+            "y_axis_left": {
+              "label": "RSI",
+              "min": 0.0,
+              "max": 100.0
+            },
+            "y_axis_right": {
+              "label": null,
+              "min": null,
+              "max": null
+            }
+          },
+          {
+            "plot_id": 7,
+            "num_series": 3,
+            "dual_y_axis": false,
+            "series": [
+              {
+                "color": "#d62728",
+                "label": "5% VaR",
+                "y_axis_side": "left"
+              },
+              {
+                "color": "#ff7f0e",
+                "label": "1% VaR",
+                "y_axis_side": "left"
+              },
+              {
+                "color": "#2ca02c",
+                "label": "5% ES",
+                "y_axis_side": "left"
+              }
+            ],
+            "x_axis": {
+              "label": "Date",
+              "values": []
+            },
+            "y_axis_left": {
+              "label": "Risk",
+              "min": 0.0,
+              "max": 20.0
+            },
+            "y_axis_right": {
+              "label": null,
+              "min": null,
+              "max": null
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "Version_2": [
+    {
+      "image": "enhanced_chart_^GSPC_2020-06-29.png",
+      "output": {
+        "num_plots": 0,
+        "plots": []
+      }
+    }
+  ],
+  "Version_3": [
+    {
+      "image": "GSPC_2025-05-08_chart1.png",
+      "output": {
+        "num_plots": 3,
+        "plots": [
+          {
+            "plot_id": 1,
+            "num_series": 6,
+            "dual_y_axis": false,
+            "series": [
+              {
+                "color": "black",
+                "label": "Close",
+                "y_axis_side": "left"
+              },
+              {
+                "color": "green",
+                "label": "SMA20",
+                "y_axis_side": "left"
+              },
+              {
+                "color": "blue",
+                "label": "SMA50",
+                "y_axis_side": "left"
+              },
+              {
+                "color": "orange",
+                "label": "SMA200",
+                "y_axis_side": "left"
+              },
+              {
+                "color": "red",
+                "label": "BB Lower",
+                "y_axis_side": "left"
+              },
+              {
+                "color": "pink",
+                "label": "BB Upper",
+                "y_axis_side": "left"
+              }
+            ],
+            "x_axis": {
+              "label": "Date",
+              "values": [
+                "2024-11-13",
+                "2024-12-02",
+                "2024-12-18",
+                "2025-01-07",
+                "2025-01-27",
+                "2025-02-12",
+                "2025-03-03",
+                "2025-03-19",
+                "2025-04-04",
+                "2025-04-23"
+              ]
+            },
+            "y_axis_left": {
+              "label": "Price Trend",
+              "min": 5000,
+              "max": 6200
+            },
+            "y_axis_right": {
+              "label": null,
+              "min": null,
+              "max": null
+            }
+          },
+          {
+            "plot_id": 2,
+            "num_series": 12,
+            "dual_y_axis": false,
+            "series": [
+              {
+                "color": "red",
+                "label": "VOLATILITY",
+                "y_axis_side": "left"
+              },
+              {
+                "color": "green",
+                "label": "HV_10",
+                "y_axis_side": "left"
+              },
+              {
+                "color": "orange",
+                "label": "HV_30",
+                "y_axis_side": "left"
+              },
+              {
+                "color": "purple",
+                "label": "VOL_PARKINSON",
+                "y_axis_side": "left"
+              },
+              {
+                "color": "blue",
+                "label": "VOL_GK",
+                "y_axis_side": "left"
+              },
+              {
+                "color": "magenta",
+                "label": "VOL_RS",
+                "y_axis_side": "left"
+              },
+              {
+                "color": "gray",
+                "label": "COMPOSITE_VOL",
+                "y_axis_side": "left"
+              },
+              {
+                "color": "black",
+                "label": "VOL_OF_VOL",
+                "y_axis_side": "left"
+              },
+              {
+                "color": "brown",
+                "label": "Vol_1pct",
+                "y_axis_side": "left"
+              },
+              {
+                "color": "teal",
+                "label": "Vol_5pct",
+                "y_axis_side": "left"
+              },
+              {
+                "color": "cyan",
+                "label": "Vol_95pct",
+                "y_axis_side": "left"
+              },
+              {
+                "color": "olive",
+                "label": "Vol_99pct",
+                "y_axis_side": "left"
+              }
+            ],
+            "x_axis": {
+              "label": "Date",
+              "values": [
+                "2024-11-13",
+                "2024-12-02",
+                "2024-12-18",
+                "2025-01-07",
+                "2025-01-27",
+                "2025-02-12",
+                "2025-03-03",
+                "2025-03-19",
+                "2025-04-04",
+                "2025-04-23"
+              ]
+            },
+            "y_axis_left": {
+              "label": "Volatility",
+              "min": 0.0,
+              "max": 0.7
+            },
+            "y_axis_right": {
+              "label": null,
+              "min": null,
+              "max": null
+            }
+          },
+          {
+            "plot_id": 3,
+            "num_series": 7,
+            "dual_y_axis": false,
+            "series": [
+              {
+                "color": "blue",
+                "label": "ROC_5",
+                "y_axis_side": "left"
+              },
+              {
+                "color": "orange",
+                "label": "ROC_10",
+                "y_axis_side": "left"
+              },
+              {
+                "color": "green",
+                "label": "ROC_20",
+                "y_axis_side": "left"
+              },
+              {
+                "color": "red",
+                "label": "Ret_1pct",
+                "y_axis_side": "left"
+              },
+              {
+                "color": "purple",
+                "label": "Ret_5pct",
+                "y_axis_side": "left"
+              },
+              {
+                "color": "brown",
+                "label": "Ret_95pct",
+                "y_axis_side": "left"
+              },
+              {
+                "color": "gray",
+                "label": "Ret_99pct",
+                "y_axis_side": "left"
+              }
+            ],
+            "x_axis": {
+              "label": "Date",
+              "values": [
+                "2024-11-13",
+                "2024-12-02",
+                "2024-12-18",
+                "2025-01-07",
+                "2025-01-27",
+                "2025-02-12",
+                "2025-03-03",
+                "2025-03-19",
+                "2025-04-04",
+                "2025-04-23"
+              ]
+            },
+            "y_axis_left": {
+              "label": "Momentum/ROC (%)",
+              "min": -15.0,
+              "max": 15.0
+            },
+            "y_axis_right": {
+              "label": null,
+              "min": null,
+              "max": null
+            }
+          }
+        ]
+      }
+    },
+    {
+      "image": "GSPC_2025-05-08_chart2.png",
+      "output": {
+        "num_plots": 4,
+        "plots": [
+          {
+            "plot_id": 1,
+            "num_series": 2,
+            "dual_y_axis": true,
+            "series": [
+              {
+                "color": "red",
+                "label": "ATR",
+                "y_axis_side": "left"
+              },
+              {
+                "color": "lightgray",
+                "label": "Volume",
+                "y_axis_side": "right"
+              }
+            ],
+            "x_axis": {
+              "label": "Date",
+              "values": [
+                "2024-11-13",
+                "2024-12-02",
+                "2024-12-18",
+                "2025-01-07",
+                "2025-01-27",
+                "2025-02-12",
+                "2025-03-03",
+                "2025-03-19",
+                "2025-04-04",
+                "2025-04-23"
+              ]
+            },
+            "y_axis_left": {
+              "label": "ATR",
+              "min": 25.0,
+              "max": 225.0
+            },
+            "y_axis_right": {
+              "label": "Volume",
+              "min": 0.0,
+              "max": 1000000000.0
+            }
+          },
+          {
+            "plot_id": 2,
+            "num_series": 1,
+            "dual_y_axis": false,
+            "series": [
+              {
+                "color": "blue",
+                "label": "CMF",
+                "y_axis_side": "left"
+              }
+            ],
+            "x_axis": {
+              "label": "Date",
+              "values": [
+                "2024-11-13",
+                "2024-12-02",
+                "2024-12-18",
+                "2025-01-07",
+                "2025-01-27",
+                "2025-02-12",
+                "2025-03-03",
+                "2025-03-19",
+                "2025-04-04",
+                "2025-04-23"
+              ]
+            },
+            "y_axis_left": {
+              "label": "CMF",
+              "min": -0.2,
+              "max": 0.5
+            },
+            "y_axis_right": {
+              "label": null,
+              "min": null,
+              "max": null
+            }
+          },
+          {
+            "plot_id": 3,
+            "num_series": 8,
+            "dual_y_axis": true,
+            "series": [
+              {
+                "color": "blue",
+                "label": "Stoch %K",
+                "y_axis_side": "left"
+              },
+              {
+                "color": "orange",
+                "label": "Stoch %D",
+                "y_axis_side": "left"
+              },
+              {
+                "color": "purple",
+                "label": "Williams %R",
+                "y_axis_side": "left"
+              },
+              {
+                "color": "green",
+                "label": "Upper Bound (80)",
+                "y_axis_side": "left"
+              },
+              {
+                "color": "gray",
+                "label": "Lower Bound (20)",
+                "y_axis_side": "left"
+              },
+              {
+                "color": "black",
+                "label": "Z-Score",
+                "y_axis_side": "right"
+              },
+              {
+                "color": "green",
+                "label": "+2 Threshold",
+                "y_axis_side": "right"
+              },
+              {
+                "color": "red",
+                "label": "-2 Threshold",
+                "y_axis_side": "right"
+              }
+            ],
+            "x_axis": {
+              "label": "Date",
+              "values": [
+                "2024-11-13",
+                "2024-12-02",
+                "2024-12-18",
+                "2025-01-07",
+                "2025-01-27",
+                "2025-02-12",
+                "2025-03-03",
+                "2025-03-19",
+                "2025-04-04",
+                "2025-04-23"
+              ]
+            },
+            "y_axis_left": {
+              "label": "Stoch / Williams",
+              "min": -100.0,
+              "max": 100.0
+            },
+            "y_axis_right": {
+              "label": "Z-Score",
+              "min": -3.0,
+              "max": 3.0
+            }
+          },
+          {
+            "plot_id": 4,
+            "num_series": 3,
+            "dual_y_axis": true,
+            "series": [
+              {
+                "color": "blue",
+                "label": "Shape",
+                "y_axis_side": "left"
+              },
+              {
+                "color": "orange",
+                "label": "MaxDD",
+                "y_axis_side": "left"
+              },
+              {
+                "color": "purple",
+                "label": "CCI",
+                "y_axis_side": "right"
+              }
+            ],
+            "x_axis": {
+              "label": "Date",
+              "values": [
+                "2024-11-13",
+                "2024-12-02",
+                "2024-12-18",
+                "2025-01-07",
+                "2025-01-27",
+                "2025-02-12",
+                "2025-03-03",
+                "2025-03-19",
+                "2025-04-04",
+                "2025-04-23"
+              ]
+            },
+            "y_axis_left": {
+              "label": "Shape / MaxDD",
+              "min": -6.0,
+              "max": 12.0
+            },
+            "y_axis_right": {
+              "label": "CCI",
+              "min": -400.0,
+              "max": 200.0
+            }
+          }
+        ]
+      }
+    },
+    {
+      "image": "GSPC_2025-05-08_chart3.png",
+      "output": {
+        "num_plots": 3,
+        "plots": [
+          {
+            "plot_id": 1,
+            "num_series": 3,
+            "dual_y_axis": true,
+            "series": [
+              {
+                "color": "blue",
+                "label": "OBV",
+                "y_axis_side": "left"
+              },
+              {
+                "color": "red",
+                "label": "ADX",
+                "y_axis_side": "right"
+              },
+              {
+                "color": "orange",
+                "label": "Strong Trend (ADX > 25)",
+                "y_axis_side": "right"
+              }
+            ],
+            "x_axis": {
+              "label": "Date",
+              "values": [
+                "2024-11-13",
+                "2024-12-02",
+                "2024-12-18",
+                "2025-01-07",
+                "2025-01-27",
+                "2025-02-12",
+                "2025-03-03",
+                "2025-03-19",
+                "2025-04-04",
+                "2025-04-23"
+              ]
+            },
+            "y_axis_left": {
+              "label": "OBV",
+              "min": 1.2,
+              "max": 1.8
+            },
+            "y_axis_right": {
+              "label": "ADX",
+              "min": 20,
+              "max": 60
+            }
+          },
+          {
+            "plot_id": 2,
+            "num_series": 6,
+            "dual_y_axis": true,
+            "series": [
+              {
+                "color": "blue",
+                "label": "Skewness (20d)",
+                "y_axis_side": "left"
+              },
+              {
+                "color": "cyan",
+                "label": "Skewness (60d)",
+                "y_axis_side": "left"
+              },
+              {
+                "color": "lightgray",
+                "label": "Skewness = 0",
+                "y_axis_side": "left"
+              },
+              {
+                "color": "red",
+                "label": "Kurtosis (20d)",
+                "y_axis_side": "right"
+              },
+              {
+                "color": "orange",
+                "label": "Kurtosis (60d)",
+                "y_axis_side": "right"
+              },
+              {
+                "color": "lightgray",
+                "label": "Kurtosis = 0",
+                "y_axis_side": "right"
+              }
+            ],
+            "x_axis": {
+              "label": "Date",
+              "values": [
+                "2024-11-13",
+                "2024-12-02",
+                "2024-12-18",
+                "2025-01-07",
+                "2025-01-27",
+                "2025-02-12",
+                "2025-03-03",
+                "2025-03-19",
+                "2025-04-04",
+                "2025-04-23"
+              ]
+            },
+            "y_axis_left": {
+              "label": "Skewness",
+              "min": -2,
+              "max": 2
+            },
+            "y_axis_right": {
+              "label": "Kurtosis",
+              "min": 0,
+              "max": 10
+            }
+          },
+          {
+            "plot_id": 3,
+            "num_series": 4,
+            "dual_y_axis": false,
+            "series": [
+              {
+                "color": "red",
+                "label": "5% VaR",
+                "y_axis_side": "left"
+              },
+              {
+                "color": "orange",
+                "label": "1% VaR",
+                "y_axis_side": "left"
+              },
+              {
+                "color": "lightgray",
+                "label": "5% ES",
+                "y_axis_side": "left"
+              },
+              {
+                "color": "black",
+                "label": "Daily Returns",
+                "y_axis_side": "left"
+              }
+            ],
+            "x_axis": {
+              "label": "Date",
+              "values": [
+                "2024-11-13",
+                "2024-12-02",
+                "2024-12-18",
+                "2025-01-07",
+                "2025-01-27",
+                "2025-02-12",
+                "2025-03-03",
+                "2025-03-19",
+                "2025-04-04",
+                "2025-04-23"
+              ]
+            },
+            "y_axis_left": {
+              "label": "VaR & ES",
+              "min": -0.08,
+              "max": 0.08
+            },
+            "y_axis_right": {
+              "label": null,
+              "min": null,
+              "max": null
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "Version_4": [
+    {
+      "image": "^GSPC_2025-03-05_chart1.png",
+      "output": {
+        "num_plots": 2,
+        "plots": [
+          {
+            "plot_id": 1,
+            "num_series": 6,
+            "dual_y_axis": false,
+            "series": [
+              {
+                "color": "red",
+                "label": "BB Lower",
+                "y_axis_side": "left"
+              },
+              {
+                "color": "green",
+                "label": "BB Upper",
+                "y_axis_side": "left"
+              },
+              {
+                "color": "gray",
+                "label": "BB Band",
+                "y_axis_side": "left"
+              },
+              {
+                "color": "darkgreen",
+                "label": "Up Day",
+                "y_axis_side": "left"
+              },
+              {
+                "color": "crimson",
+                "label": "Down Day",
+                "y_axis_side": "left"
+              },
+              {
+                "color": "purple",
+                "label": "SMA200",
+                "y_axis_side": "left"
+              }
+            ],
+            "x_axis": {
+              "label": "Date",
+              "values": [
+                "2024-09-03",
+                "2024-09-19",
+                "2024-10-07",
+                "2024-10-23",
+                "2024-11-08",
+                "2024-11-26",
+                "2024-12-13",
+                "2025-01-02",
+                "2025-01-22",
+                "2025-02-07",
+                "2025-02-26"
+              ]
+            },
+            "y_axis_left": {
+              "label": "Price",
+              "min": 92.5,
+              "max": 112.5
+            },
+            "y_axis_right": {
+              "label": null,
+              "min": null,
+              "max": null
+            }
+          },
+          {
+            "plot_id": 2,
+            "num_series": 2,
+            "dual_y_axis": true,
+            "series": [
+              {
+                "color": "blue",
+                "label": "CMF (20d)",
+                "y_axis_side": "left"
+              },
+              {
+                "color": "red",
+                "label": "Normalized ATR (14d)",
+                "y_axis_side": "right"
+              }
+            ],
+            "x_axis": {
+              "label": "Date",
+              "values": [
+                "2024-09-03",
+                "2024-09-19",
+                "2024-10-07",
+                "2024-10-23",
+                "2024-11-08",
+                "2024-11-26",
+                "2024-12-13",
+                "2025-01-02",
+                "2025-01-22",
+                "2025-02-07",
+                "2025-02-26"
+              ]
+            },
+            "y_axis_left": {
+              "label": "CMF",
+              "min": -0.1,
+              "max": 0.4
+            },
+            "y_axis_right": {
+              "label": "Normalized ATR",
+              "min": 0.007,
+              "max": 0.015
+            }
+          }
+        ]
+      }
+    },
+    {
+      "image": "^GSPC_2025-03-05_chart2.png",
+      "output": {
+        "num_plots": 2,
+        "plots": [
+          {
+            "plot_id": 1,
+            "num_series": 4,
+            "dual_y_axis": true,
+            "series": [
+              {
+                "color": "lightgreen",
+                "label": "Normalized MACD Hist (12, 26, 9)",
+                "y_axis_side": "left"
+              },
+              {
+                "color": "purple",
+                "label": "RSI (14d)",
+                "y_axis_side": "right"
+              },
+              {
+                "color": "red",
+                "label": "Overbought (70)",
+                "y_axis_side": "right"
+              },
+              {
+                "color": "green",
+                "label": "Oversold (30)",
+                "y_axis_side": "right"
+              }
+            ],
+            "x_axis": {
+              "label": "Date",
+              "values": [
+                "2024-09-03",
+                "2024-09-19",
+                "2024-10-07",
+                "2024-10-23",
+                "2024-11-08",
+                "2024-11-26",
+                "2024-12-13",
+                "2025-01-02",
+                "2025-01-22",
+                "2025-02-07",
+                "2025-02-26"
+              ]
+            },
+            "y_axis_left": {
+              "label": "MACD Hist",
+              "min": -0.006,
+              "max": 0.004
+            },
+            "y_axis_right": {
+              "label": "RSI",
+              "min": 0,
+              "max": 100
+            }
+          },
+          {
+            "plot_id": 2,
+            "num_series": 5,
+            "dual_y_axis": true,
+            "series": [
+              {
+                "color": "blue",
+                "label": "Stochastic K",
+                "y_axis_side": "left"
+              },
+              {
+                "color": "red",
+                "label": "Overbought (80)",
+                "y_axis_side": "left"
+              },
+              {
+                "color": "green",
+                "label": "Oversold (20)",
+                "y_axis_side": "left"
+              },
+              {
+                "color": "black",
+                "label": "ADX",
+                "y_axis_side": "right"
+              },
+              {
+                "color": "gray",
+                "label": "ADX Trend (25)",
+                "y_axis_side": "right"
+              }
+            ],
+            "x_axis": {
+              "label": "Date",
+              "values": [
+                "2024-09-03",
+                "2024-09-19",
+                "2024-10-07",
+                "2024-10-23",
+                "2024-11-08",
+                "2024-11-26",
+                "2024-12-13",
+                "2025-01-02",
+                "2025-01-22",
+                "2025-02-07",
+                "2025-02-26"
+              ]
+            },
+            "y_axis_left": {
+              "label": "Stochastic K",
+              "min": 0,
+              "max": 100
+            },
+            "y_axis_right": {
+              "label": "ADX",
+              "min": 0,
+              "max": 30
+            }
+          }
+        ]
+      }
+    },
+    {
+      "image": "^GSPC_2025-03-05_chart3.png",
+      "output": {
+        "num_plots": 3,
+        "plots": [
+          {
+            "plot_id": 1,
+            "num_series": 4,
+            "dual_y_axis": true,
+            "series": [
+              {
+                "color": "#1f77b4",
+                "label": "HV (10d, annualized)",
+                "y_axis_side": "left"
+              },
+              {
+                "color": "#000000",
+                "label": "HV (126d, annualized)",
+                "y_axis_side": "left"
+              },
+              {
+                "color": "#ffa500",
+                "label": "5% VaR (126d)",
+                "y_axis_side": "left"
+              },
+              {
+                "color": "#d62728",
+                "label": "5% ES (126d)",
+                "y_axis_side": "left"
+              }
+            ],
+            "x_axis": {
+              "label": "Date",
+              "values": [
+                "2024-09-03",
+                "2024-09-19",
+                "2024-10-07",
+                "2024-10-23",
+                "2024-11-08",
+                "2024-11-26",
+                "2024-12-13",
+                "2025-01-02",
+                "2025-01-22",
+                "2025-02-07",
+                "2025-02-26"
+              ]
+            },
+            "y_axis_left": {
+              "label": "Annualized Volatility",
+              "min": 0.04,
+              "max": 0.2
+            },
+            "y_axis_right": {
+              "label": "Return",
+              "min": -0.01,
+              "max": 0.0
+            }
+          },
+          {
+            "plot_id": 2,
+            "num_series": 2,
+            "dual_y_axis": false,
+            "series": [
+              {
+                "color": "#ff7f0e",
+                "label": "Skewness (126d)",
+                "y_axis_side": "left"
+              },
+              {
+                "color": "#000000",
+                "label": "Skewness = 0",
+                "y_axis_side": "left"
+              }
+            ],
+            "x_axis": {
+              "label": "Date",
+              "values": [
+                "2024-09-03",
+                "2024-09-19",
+                "2024-10-07",
+                "2024-10-23",
+                "2024-11-08",
+                "2024-11-26",
+                "2024-12-13",
+                "2025-01-02",
+                "2025-01-22",
+                "2025-02-07",
+                "2025-02-26"
+              ]
+            },
+            "y_axis_left": {
+              "label": "Skewness",
+              "min": -0.8,
+              "max": 0.0
+            },
+            "y_axis_right": {
+              "label": null,
+              "min": null,
+              "max": null
+            }
+          },
+          {
+            "plot_id": 3,
+            "num_series": 2,
+            "dual_y_axis": true,
+            "series": [
+              {
+                "color": "#ff0000",
+                "label": "Drawdown (20d)",
+                "y_axis_side": "left"
+              },
+              {
+                "color": "#000000",
+                "label": "Ulcer Index",
+                "y_axis_side": "right"
+              }
+            ],
+            "x_axis": {
+              "label": "Date",
+              "values": [
+                "2024-09-03",
+                "2024-09-19",
+                "2024-10-07",
+                "2024-10-23",
+                "2024-11-08",
+                "2024-11-26",
+                "2024-12-13",
+                "2025-01-02",
+                "2025-01-22",
+                "2025-02-07",
+                "2025-02-26"
+              ]
+            },
+            "y_axis_left": {
+              "label": "Drawdown / Pain (%)",
+              "min": -6.0,
+              "max": 0.0
+            },
+            "y_axis_right": {
+              "label": "Ulcer Index",
+              "min": 0.0,
+              "max": 2.0
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,803 @@
+{
+  "Version_1": {
+    "images": [
+      "core_chart_^GSPC_2024-12-13.png"
+    ],
+    "call_mode": "json_schema",
+    "questions": [
+      {
+        "id": 1,
+        "panel": "Volatility & ATR",
+        "question": "In which month does ATR reach its maximum value?",
+        "allowed_answers": [
+          "2024-07",
+          "2024-08",
+          "2024-09",
+          "2024-10",
+          "2024-11",
+          "2024-12"
+        ]
+      },
+      {
+        "id": 2,
+        "panel": "OBV",
+        "question": "In which month does OBV reach its maximum value?",
+        "allowed_answers": [
+          "2024-07",
+          "2024-08",
+          "2024-09",
+          "2024-10",
+          "2024-11",
+          "2024-12"
+        ]
+      },
+      {
+        "id": 3,
+        "panel": "MACD & RSI",
+        "question": "Does RSI fall below the Oversold line (30) at any point in the window?",
+        "allowed_answers": [
+          "Yes",
+          "No"
+        ]
+      },
+      {
+        "id": 4,
+        "panel": "MACD & RSI",
+        "question": "In which month does the MACD line cross from below zero to above zero?",
+        "allowed_answers": [
+          "2024-07",
+          "2024-08",
+          "2024-09",
+          "2024-10",
+          "2024-11",
+          "2024-12"
+        ]
+      },
+      {
+        "id": 5,
+        "panel": "Price & Trend",
+        "question": "Does the Close price touch or fall below the BB Lower line at any point in the window?",
+        "allowed_answers": [
+          "Yes",
+          "No"
+        ]
+      },
+      {
+        "id": 6,
+        "panel": "MACD & RSI",
+        "question": "At the last visible data point, is RSI above the overbought line (70), below the oversold line (30), or between them?",
+        "allowed_answers": [
+          "Above 70",
+          "Below 30",
+          "Between"
+        ]
+      },
+      {
+        "id": 7,
+        "panel": "Cross-panel: Drawdown Risk + Volatility & ATR",
+        "question": "Does the Ulcer Index reach its maximum in the same month in which ATR reaches its maximum?",
+        "allowed_answers": [
+          "Yes",
+          "No"
+        ]
+      },
+      {
+        "id": 8,
+        "panel": "Cross-panel: OBV + Price & Trend",
+        "question": "Over the final two months visible, does OBV move in the same direction as the Close price, or in the opposite direction?",
+        "allowed_answers": [
+          "Same direction",
+          "Opposite direction"
+        ]
+      },
+      {
+        "id": 9,
+        "panel": "Cross-panel: Price & Trend + Drawdown Risk",
+        "question": "Which happens first in the window: BB Width (right axis of the price panel) reaching its maximum, or the Ulcer Index reaching its maximum?",
+        "allowed_answers": [
+          "BB Width",
+          "Ulcer Index"
+        ]
+      },
+      {
+        "id": 10,
+        "panel": "Synthesis - all panels",
+        "question": "Combining the momentum panel (MACD/RSI), the Drawdown Risk panel (Ulcer Index) and the VaR/ES panel at the last visible data point, is the overall picture risk-on (calm/bullish), risk-off (stressed/bearish), or mixed?",
+        "allowed_answers": [
+          "Risk-on",
+          "Risk-off",
+          "Mixed"
+        ]
+      }
+    ],
+    "answers": {
+      "answers": [
+        {
+          "id": 1,
+          "model_answer": "2024-09",
+          "reasoning": "The ATR (magenta line) in the Volatility & ATR panel reaches its highest visible peak around the third month from the left, which corresponds to 2024-09. The curve is clearly higher there than at other month markers.",
+          "evidence_images": [
+            1
+          ]
+        },
+        {
+          "id": 2,
+          "model_answer": "2024-11",
+          "reasoning": "The OBV (blue line in the bottom panel) climbs to its highest value just before the final month and then slightly declines at the end, indicating its maximum occurs in 2024-11. The peak is left of the last vertical month divider.",
+          "evidence_images": [
+            1
+          ]
+        },
+        {
+          "id": 3,
+          "model_answer": "Yes",
+          "reasoning": "The RSI (purple line in the MACD & RSI panel) dips well below the lower dashed oversold line at least once (visible around the middle of the window), indicating it falls below 30. The trough is clearly under the marked oversold level.",
+          "evidence_images": [
+            1
+          ]
+        },
+        {
+          "id": 4,
+          "model_answer": "2024-09",
+          "reasoning": "The MACD (blue line) crosses from negative to positive near the start of the third month, where the histogram turns green and the blue line moves above the zero axis, which corresponds to 2024-09. This upward crossing aligns with that month divider.",
+          "evidence_images": [
+            1
+          ]
+        },
+        {
+          "id": 5,
+          "model_answer": "Yes",
+          "reasoning": "In the Price & Trend panel the white Close line touches or reaches the visible lower Bollinger Band at least once (early in the window), where the two lines meet near a month divider. The Close is shown contacting the lower band there.",
+          "evidence_images": [
+            1
+          ]
+        },
+        {
+          "id": 6,
+          "model_answer": "Between",
+          "reasoning": "At the final data point the RSI (purple) sits between the two horizontal threshold lines and is well below the upper overbought line (70) and above the oversold line (30). The endpoint is mid-range on the RSI scale.",
+          "evidence_images": [
+            1
+          ]
+        },
+        {
+          "id": 7,
+          "model_answer": "No",
+          "reasoning": "The Ulcer Index (red line in the Drawdown Risk panel) reaches its maximum earlier in the window (around the second month), while ATR peaks later (around 2024-09). The two maxima are visibly at different month positions.",
+          "evidence_images": [
+            1
+          ]
+        },
+        {
+          "id": 8,
+          "model_answer": "Same direction",
+          "reasoning": "Over the final two months both OBV and the Close price move similarly: both reach a peak just before the last month and then decline slightly into the final data point, indicating the same directional move downward.",
+          "evidence_images": [
+            1
+          ]
+        },
+        {
+          "id": 9,
+          "model_answer": "Ulcer Index",
+          "reasoning": "The Ulcer Index reaches its peak earlier in the window (around the second month), whereas BB Width (right axis of the price panel) attains its maximum later (around the third month). Visually the Ulcer Index peak precedes the BB Width peak.",
+          "evidence_images": [
+            1
+          ]
+        },
+        {
+          "id": 10,
+          "model_answer": "Risk-on",
+          "reasoning": "At the last data point the Ulcer Index is low, VaR/ES lines are moderate and not elevated, and momentum indicators (RSI between, MACD near neutral) do not show heavy stress. Overall the signals indicate a calmer, risk-on posture.",
+          "evidence_images": [
+            1
+          ]
+        }
+      ]
+    }
+  },
+  "Version_2": {
+    "images": [
+      "enhanced_chart_^GSPC_2020-06-29.png"
+    ],
+    "call_mode": "json_schema",
+    "questions": [
+      {
+        "id": 1,
+        "panel": "ATR / Volume",
+        "question": "In which month does ATR reach its maximum value?",
+        "allowed_answers": [
+          "2020-01",
+          "2020-02",
+          "2020-03",
+          "2020-04",
+          "2020-05",
+          "2020-06"
+        ]
+      },
+      {
+        "id": 2,
+        "panel": "Skewness & Kurtosis",
+        "question": "In which month does Kurtosis (20d) (right axis) reach its maximum value?",
+        "allowed_answers": [
+          "2020-01",
+          "2020-02",
+          "2020-03",
+          "2020-04",
+          "2020-05",
+          "2020-06"
+        ]
+      },
+      {
+        "id": 3,
+        "panel": "Oscillators",
+        "question": "Does RSI fall below the Oversold line at any point in the window?",
+        "allowed_answers": [
+          "Yes",
+          "No"
+        ]
+      },
+      {
+        "id": 4,
+        "panel": "Stoch / WilliamsR / Z-Score",
+        "question": "After the sharp market decline, in which month do Stoch %K and Stoch %D first rise back above the 80 line?",
+        "allowed_answers": [
+          "2020-01",
+          "2020-02",
+          "2020-03",
+          "2020-04",
+          "2020-05",
+          "2020-06"
+        ]
+      },
+      {
+        "id": 5,
+        "panel": "Price & Trend",
+        "question": "Does the Close price cross below the BB Lower line at any point in the window?",
+        "allowed_answers": [
+          "Yes",
+          "No"
+        ]
+      },
+      {
+        "id": 6,
+        "panel": "Stoch / WilliamsR / Z-Score",
+        "question": "At the last visible data point, are Stoch %K and Stoch %D both above 80?",
+        "allowed_answers": [
+          "Yes",
+          "No"
+        ]
+      },
+      {
+        "id": 7,
+        "panel": "Cross-panel: ATR / Volume + Price & Trend",
+        "question": "Does ATR reach its maximum in the same month in which the Close price reaches its minimum?",
+        "allowed_answers": [
+          "Yes",
+          "No"
+        ]
+      },
+      {
+        "id": 8,
+        "panel": "Cross-panel: OBV + Price & Trend",
+        "question": "Over the final two months visible, does OBV move in the same direction as the Close price, or in the opposite direction?",
+        "allowed_answers": [
+          "Same direction",
+          "Opposite direction"
+        ]
+      },
+      {
+        "id": 9,
+        "panel": "Cross-panel: Volatility + VaR & ES",
+        "question": "Which happens first in the window: HV_10 (the green line in the volatility panel) reaching its maximum, or the 5% ES line reaching its most negative value?",
+        "allowed_answers": [
+          "HV_10",
+          "5% ES"
+        ]
+      },
+      {
+        "id": 10,
+        "panel": "Synthesis - all panels",
+        "question": "Considering the price panel, the volatility panel and the VaR & ES panel at the end of the chart, does the market look like it is recovering from the earlier decline, still under stress, or mixed?",
+        "allowed_answers": [
+          "Recovering",
+          "Still under stress",
+          "Mixed"
+        ]
+      }
+    ],
+    "answers": {
+      "answers": [
+        {
+          "id": 1,
+          "model_answer": "2020-03",
+          "reasoning": "The ATR red line in the ATR/Volume panel reaches its highest point around the mid-March period. The peak is clearly visible near the March trough of the price. ",
+          "evidence_images": [
+            1
+          ]
+        },
+        {
+          "id": 2,
+          "model_answer": "2020-03",
+          "reasoning": "The Kurtosis (20d) (right axis) shows a large spike around mid-March. That maximum coincides with the market stress visible in March. ",
+          "evidence_images": [
+            1
+          ]
+        },
+        {
+          "id": 3,
+          "model_answer": "Yes",
+          "reasoning": "The RSI line in the Oscillators panel drops well below the oversold horizontal line during the March sell-off. The dip is visually below the oversold threshold. ",
+          "evidence_images": [
+            1
+          ]
+        },
+        {
+          "id": 4,
+          "model_answer": "2020-04",
+          "reasoning": "After the sharp decline in March, both Stoch %K and %D first climb back above the 80 line in early April. The first clear crossing above 80 is visible in April. ",
+          "evidence_images": [
+            1
+          ]
+        },
+        {
+          "id": 5,
+          "model_answer": "Yes",
+          "reasoning": "In the Price & Trend panel the Close (black) line falls outside and below the BB Lower shaded band during the March low. The close clearly crosses under the lower Bollinger band. ",
+          "evidence_images": [
+            1
+          ]
+        },
+        {
+          "id": 6,
+          "model_answer": "No",
+          "reasoning": "At the rightmost data point the Stoch %K and %D lines are below the 80 horizontal mark. Both lines sit under the 80 level at the end of the chart. ",
+          "evidence_images": [
+            1
+          ]
+        },
+        {
+          "id": 7,
+          "model_answer": "Yes",
+          "reasoning": "ATR reaches its peak in March and the Close price minimum also occurs at the March trough in the Price panel. Both extremes coincide in March. ",
+          "evidence_images": [
+            1
+          ]
+        },
+        {
+          "id": 8,
+          "model_answer": "Same direction",
+          "reasoning": "Over the final two months the Close price trends slightly upward and OBV also rises over the same period. The OBV movement matches the direction of the Close. ",
+          "evidence_images": [
+            1
+          ]
+        },
+        {
+          "id": 9,
+          "model_answer": "5% ES",
+          "reasoning": "The 5% ES line reaches its most negative point at the mid-March market trough, while the HV_10 (green) attains its peak slightly afterwards. The ES extreme thus occurs first. ",
+          "evidence_images": [
+            1
+          ]
+        },
+        {
+          "id": 10,
+          "model_answer": "Recovering",
+          "reasoning": "By the end of the chart price has climbed well off the March lows and volatility/ES have eased from their peaks. The combination shows the market appearing to recover from the earlier decline. ",
+          "evidence_images": [
+            1
+          ]
+        }
+      ]
+    }
+  },
+  "Version_3": {
+    "images": [
+      "GSPC_2025-05-08_chart1.png",
+      "GSPC_2025-05-08_chart2.png",
+      "GSPC_2025-05-08_chart3.png"
+    ],
+    "call_mode": "json_schema",
+    "questions": [
+      {
+        "id": 1,
+        "panel": "Image 2 - ATR / Volume",
+        "question": "In which month does ATR (Image 2) reach its maximum value?",
+        "allowed_answers": [
+          "2024-11",
+          "2024-12",
+          "2025-01",
+          "2025-02",
+          "2025-03",
+          "2025-04",
+          "2025-05"
+        ]
+      },
+      {
+        "id": 2,
+        "panel": "Image 2 - CMF",
+        "question": "In which month does CMF (Image 2) reach its maximum value?",
+        "allowed_answers": [
+          "2024-11",
+          "2024-12",
+          "2025-01",
+          "2025-02",
+          "2025-03",
+          "2025-04",
+          "2025-05"
+        ]
+      },
+      {
+        "id": 3,
+        "panel": "Image 1 - Oscillators",
+        "question": "Does RSI (Image 1) fall below the Oversold (30) line at any point in the window?",
+        "allowed_answers": [
+          "Yes",
+          "No"
+        ]
+      },
+      {
+        "id": 4,
+        "panel": "Image 1 - Price & Trend",
+        "question": "The price panel marks a Death Cross event. In which month does it occur?",
+        "allowed_answers": [
+          "2024-11",
+          "2024-12",
+          "2025-01",
+          "2025-02",
+          "2025-03",
+          "2025-04",
+          "2025-05"
+        ]
+      },
+      {
+        "id": 5,
+        "panel": "Image 1 - Price & Trend",
+        "question": "Does the Close price cross below SMA200 at any point in the window?",
+        "allowed_answers": [
+          "Yes",
+          "No"
+        ]
+      },
+      {
+        "id": 6,
+        "panel": "Image 2 - CMF",
+        "question": "At the last visible data point, is CMF above or below zero?",
+        "allowed_answers": [
+          "Above",
+          "Below"
+        ]
+      },
+      {
+        "id": 7,
+        "panel": "Cross-image: Image 2 + Image 3",
+        "question": "Does ATR (Image 2) reach its maximum in the same month in which the 5% ES line (Image 3) reaches its most negative value?",
+        "allowed_answers": [
+          "Yes",
+          "No"
+        ]
+      },
+      {
+        "id": 8,
+        "panel": "Cross-image: Image 3 + Image 1",
+        "question": "Over the final month visible, does OBV (Image 3) move in the same direction as the Close price (Image 1), or in the opposite direction?",
+        "allowed_answers": [
+          "Same direction",
+          "Opposite direction"
+        ]
+      },
+      {
+        "id": 9,
+        "panel": "Cross-image: Image 3 + Image 2",
+        "question": "Which happens first in the window: ADX (Image 3) reaching its maximum, or ATR (Image 2) reaching its maximum?",
+        "allowed_answers": [
+          "ADX",
+          "ATR"
+        ]
+      },
+      {
+        "id": 10,
+        "panel": "Synthesis - all images",
+        "question": "Combining trend and momentum (Image 1), volatility and money flow (Image 2), and the risk measures (Image 3) at the last visible data point, is the overall picture risk-on, risk-off, or mixed?",
+        "allowed_answers": [
+          "Risk-on",
+          "Risk-off",
+          "Mixed"
+        ]
+      }
+    ],
+    "answers": {
+      "answers": [
+        {
+          "id": 1,
+          "model_answer": "2025-04",
+          "reasoning": "The ATR red line in Image 2 peaks sharply in April 2025, reaching its highest level around mid-to-late April. No other month shows a higher ATR value on the chart.",
+          "evidence_images": [
+            2
+          ]
+        },
+        {
+          "id": 2,
+          "model_answer": "2025-02",
+          "reasoning": "The CMF line in Image 2 reaches its highest point in February 2025, with a clear peak around mid-February. Other months show lower CMF readings.",
+          "evidence_images": [
+            2
+          ]
+        },
+        {
+          "id": 3,
+          "model_answer": "Yes",
+          "reasoning": "The RSI line in the oscillators panel of Image 1 drops well below the 30 oversold level during the big decline around March\u2013April. The purple RSI trace is visibly under the 30 line at that time.",
+          "evidence_images": [
+            1
+          ]
+        },
+        {
+          "id": 4,
+          "model_answer": "2025-04",
+          "reasoning": "The price panel in Image 1 shows the Death Cross marker (red) around early April 2025. The marker aligns with the April section of the x-axis.",
+          "evidence_images": [
+            1
+          ]
+        },
+        {
+          "id": 5,
+          "model_answer": "Yes",
+          "reasoning": "In Image 1 the black Close line falls below the orange SMA200 line during the large decline and remains below it afterward. The Close is visibly under the SMA200 for part of the window.",
+          "evidence_images": [
+            1
+          ]
+        },
+        {
+          "id": 6,
+          "model_answer": "Above",
+          "reasoning": "At the rightmost point of the CMF plot in Image 2 the blue line is clearly above the zero horizontal line, indicating positive CMF at the last data point.",
+          "evidence_images": [
+            2
+          ]
+        },
+        {
+          "id": 7,
+          "model_answer": "Yes",
+          "reasoning": "ATR in Image 2 reaches its maximum in April 2025, and the 5% ES line in Image 3 has its most negative spike in early April 2025 as well. Both extrema occur in the April 2025 timeframe.",
+          "evidence_images": [
+            2,
+            3
+          ]
+        },
+        {
+          "id": 8,
+          "model_answer": "Same direction",
+          "reasoning": "Over the final month the Close price in Image 1 is trending upward and the OBV in Image 3 also rises sharply toward the right edge. Both series move upward in the final visible month.",
+          "evidence_images": [
+            3,
+            1
+          ]
+        },
+        {
+          "id": 9,
+          "model_answer": "ADX",
+          "reasoning": "The ADX (red line) in Image 3 reaches its peak around mid-March 2025, while ATR in Image 2 peaks later in April 2025. Therefore ADX's maximum occurs first in the window.",
+          "evidence_images": [
+            3,
+            2
+          ]
+        },
+        {
+          "id": 10,
+          "model_answer": "Mixed",
+          "reasoning": "At the last data point momentum (RSI/MACD) and CMF are positive, suggesting bullish flow, but ATR remains elevated and downside risk measures (negative ES/VaR) are still apparent. The combination of positive momentum but elevated volatility and residual tail risk indicates a mixed picture.",
+          "evidence_images": [
+            1,
+            2,
+            3
+          ]
+        }
+      ]
+    }
+  },
+  "Version_4": {
+    "images": [
+      "^GSPC_2025-03-05_chart1.png",
+      "^GSPC_2025-03-05_chart2.png",
+      "^GSPC_2025-03-05_chart3.png"
+    ],
+    "call_mode": "json_schema",
+    "questions": [
+      {
+        "id": 1,
+        "panel": "Image 3 - Volatility & Tail Risk",
+        "question": "In which month does HV (10d, annualized) (Image 3) reach its maximum value?",
+        "allowed_answers": [
+          "2024-09",
+          "2024-10",
+          "2024-11",
+          "2024-12",
+          "2025-01",
+          "2025-02",
+          "2025-03"
+        ]
+      },
+      {
+        "id": 2,
+        "panel": "Image 1 - Price & Long-Term Regime",
+        "question": "In which month does the candlestick price series (Image 1) reach its highest value? (Note: the price panel is normalized so that the first value = 100.)",
+        "allowed_answers": [
+          "2024-09",
+          "2024-10",
+          "2024-11",
+          "2024-12",
+          "2025-01",
+          "2025-02",
+          "2025-03"
+        ]
+      },
+      {
+        "id": 3,
+        "panel": "Image 2 - Stochastic & ADX",
+        "question": "Does Stochastic K (Image 2) fall below the Oversold (20) line at any point in the window?",
+        "allowed_answers": [
+          "Yes",
+          "No"
+        ]
+      },
+      {
+        "id": 4,
+        "panel": "Image 2 - Stochastic & ADX",
+        "question": "In which month does Stochastic K (Image 2) first fall below the Oversold (20) line?",
+        "allowed_answers": [
+          "2024-09",
+          "2024-10",
+          "2024-11",
+          "2024-12",
+          "2025-01",
+          "2025-02",
+          "2025-03"
+        ]
+      },
+      {
+        "id": 5,
+        "panel": "Image 1 - Price & Long-Term Regime",
+        "question": "Does the candlestick price series (Image 1) cross below SMA200 at any point in the window? (Note: the price panel is normalized so that the first value = 100.)",
+        "allowed_answers": [
+          "Yes",
+          "No"
+        ]
+      },
+      {
+        "id": 6,
+        "panel": "Image 2 - Oscillators",
+        "question": "At the last visible data point, is RSI (14d) - plotted on the right axis of Image 2's top panel - above the overbought line (70), below the oversold line (30), or between them?",
+        "allowed_answers": [
+          "Above 70",
+          "Below 30",
+          "Between"
+        ]
+      },
+      {
+        "id": 7,
+        "panel": "Cross-image: Image 3 + Image 1",
+        "question": "Does the Ulcer Index (Image 3) reach its maximum in the same month in which Normalized ATR (14d) (Image 1) reaches its maximum?",
+        "allowed_answers": [
+          "Yes",
+          "No"
+        ]
+      },
+      {
+        "id": 8,
+        "panel": "Cross-image: Image 3 + Image 1",
+        "question": "Over the final month visible, does HV (10d, annualized) (Image 3) move in the same direction as the candlestick price series (Image 1), or in the opposite direction?",
+        "allowed_answers": [
+          "Same direction",
+          "Opposite direction"
+        ]
+      },
+      {
+        "id": 9,
+        "panel": "Cross-image: Image 3 + Image 2",
+        "question": "Which happens first in the window: HV (10d, annualized) (Image 3) reaching its maximum, or the Normalized MACD Hist (Image 2) reaching its most negative value?",
+        "allowed_answers": [
+          "HV (10d, annualized)",
+          "Normalized MACD Hist"
+        ]
+      },
+      {
+        "id": 10,
+        "panel": "Synthesis - all images",
+        "question": "Combining all three images at the last visible data point, is overall market risk rising, falling, or mixed? In your reasoning, name the two images that most support your answer.",
+        "allowed_answers": [
+          "Rising",
+          "Falling",
+          "Mixed"
+        ]
+      }
+    ],
+    "answers": {
+      "answers": [
+        {
+          "id": 1,
+          "model_answer": "2025-01",
+          "reasoning": "The blue HV (10d, annualized) line in Image 3 reaches its highest peak around early January (the spike near the 2025-01-02 tick). No other month shows a higher blue peak on the chart.",
+          "evidence_images": [
+            3
+          ]
+        },
+        {
+          "id": 2,
+          "model_answer": "2025-02",
+          "reasoning": "The candlestick series in Image 1 attains its highest normalized values in February, where the upper wicks and BB Upper are at their maximum. The subsequent move into March shows a drop from that February peak.",
+          "evidence_images": [
+            1
+          ]
+        },
+        {
+          "id": 3,
+          "model_answer": "Yes",
+          "reasoning": "The Stochastic K (blue line) in Image 2 dips to very low values multiple times, visibly crossing below the green dashed oversold (20) line (e.g., early in the window and again later). These deep troughs fall beneath the 20 level.",
+          "evidence_images": [
+            2
+          ]
+        },
+        {
+          "id": 4,
+          "model_answer": "2024-09",
+          "reasoning": "The first clear drop of Stochastic K below the oversold (20) line occurs at the left edge of Image 2 in September 2024. That initial trough is the earliest instance visible in the window.",
+          "evidence_images": [
+            2
+          ]
+        },
+        {
+          "id": 5,
+          "model_answer": "No",
+          "reasoning": "The candlesticks in Image 1 remain above the purple SMA200 line throughout the plotted window; even the late-Feb/early-Mar dip does not clearly cross below the SMA200. The SMA200 stays below the price series at all visible points.",
+          "evidence_images": [
+            1
+          ]
+        },
+        {
+          "id": 6,
+          "model_answer": "Between",
+          "reasoning": "At the rightmost point of Image 2 the purple RSI line is around the 40s, clearly between the overbought (70) and oversold (30) horizontal lines. It is neither above 70 nor below 30.",
+          "evidence_images": [
+            2
+          ]
+        },
+        {
+          "id": 7,
+          "model_answer": "Yes",
+          "reasoning": "The Ulcer Index (dashed black in Image 3) reaches its peak at the end of the window (early March), and the Normalized ATR (red line in Image 1) also attains its maximum at the final visible point. Both maxima occur in the same final month.",
+          "evidence_images": [
+            3,
+            1
+          ]
+        },
+        {
+          "id": 8,
+          "model_answer": "Opposite direction",
+          "reasoning": "Over the final month the HV (blue in Image 3) rises sharply into March while the candlestick price series in Image 1 falls into the same period. Thus they move in opposite directions.",
+          "evidence_images": [
+            3,
+            1
+          ]
+        },
+        {
+          "id": 9,
+          "model_answer": "HV (10d, annualized)",
+          "reasoning": "HV reaches its maximum earlier in the window (around January) as seen in Image 3, while the most negative Normalized MACD histogram bars in Image 2 occur later (near the end of the window). Therefore HV peaks first.",
+          "evidence_images": [
+            3,
+            2
+          ]
+        },
+        {
+          "id": 10,
+          "model_answer": "Rising",
+          "reasoning": "At the last data point volatility measures are increasing (HV and Ulcer Index in Image 3) and Normalized ATR in Image 1 is rising, indicating rising market risk. The two strongest supports are Image 3 (HV/Ulcer) and Image 1 (Normalized ATR).",
+          "evidence_images": [
+            3,
+            1
+          ]
+        }
+      ]
+    }
+  }
+}
